@@ -5,19 +5,37 @@ git status
 
 git commit -am "....."
 
+git rm -r --cached output
+
 git push -u origin master
 
 floyd run --gpu --env tensorflow-1.0 --data N5JGDsKC38PRs4ptchv8D6 "python vae.py"
 
 First Run
+vae:4
+
 https://www.floydhub.com/api/v1/resources/UYRFyisZG32tGaTvQT9FtA?content=true
 
 https://www.floydhub.com/viewer/data/Ffai4GQMiTYnT5Pj7tXhm5/eDbaUGX8Mww8n6y9ardP2F/reconstruct/
 
 
 Extended:
+var:7
 https://www.floydhub.com/viewer/data/bkcx99EH4L44nkUk3gjqmm/6EmYvTi2M8eBjZEMBPAWE8/checkpoints/
 
+
+--------------
+Vaegan
+
+floyd run --gpu --env tensorflow-1.0 --data N5JGDsKC38PRs4ptchv8D6 "python vaegan.py"
+
+Output:
+vargan3
+https://www.floydhub.com/viewer/data/xBJyvWKZzwNAtZbYnpXSZ7/jhkAyMGqq6h7iBwku7DBGG/
+
+Log:
+vargan3
+https://www.floydhub.com/api/v1/resources/FZVeBfavLgEjd4FiG9iVc2?content=true
 
 
 

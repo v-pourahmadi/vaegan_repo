@@ -449,8 +449,8 @@ def train_vaegan(files,
                  variational=True,
                  filter_sizes=[3, 3, 3, 3],
                  activation=tf.nn.elu,
-                 img_step=10,
-                 save_step=10,
+                 img_step=300,
+                 save_step=300,
                  ckpt_name="vaegan.ckpt",
                  ckpt_load_dir="./checkpoints/",
                  on_cloud=0):
@@ -746,5 +746,5 @@ def load(checkpoint_dir, sess, saver):
 
 
 if __name__ == '__main__':
-    on_cloud=0;
+    on_cloud=1;
     test_celeb()
